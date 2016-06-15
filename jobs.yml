@@ -1,14 +1,14 @@
 jobs:
-  - name : vjob1-manifest
+  - name : e2eplv2jobv-manifest
     type : manifest
     steps :
-      - GET: resourcev-image
-      - GET: resourcev-dockeroption
-      - GET: resourcev-ecsparam
-      - GET: resourcev-replica
+      - GET: e2eplv2v-image
+      - GET: e2eplv2v-dockeroption
+      - GET: e2eplv2v-ecsparam
+      - GET: e2eplv2v-replica
       
-  #- name: vjob2-ecsdeploy
+  #- name: e2eplv2jobv-ecsdeploy
  #   type: ecsDeploy
 #    steps:
-     # - GET: vjob1-manifest
-    #  - GET: resourcev-ecscluster
+     # - GET: e2eplv2jobv-manifest
+    #  - GET: e2eplv2v-ecscluster
