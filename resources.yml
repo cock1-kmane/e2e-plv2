@@ -1,5 +1,5 @@
 resources:
-  - name: resourcev-image
+  - name: e2eplv2v-image
     type: image
     integration: cock1-hub #your subs integration for docker hub
     source:
@@ -7,16 +7,15 @@ resources:
       isPull: true
       tag: latest
       
-  - name: resourcev-ecscluster
+  - name: e2eplv2v-ecscluster
     type: ecsCluster
     integration: cock1-ecscluster
     source:
       name : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
       
-  - name: resourcev-dockeroption
-    type: dockerOptions
-    integration: cock1-ecscluster
+  - name: e2eplv2v-dockeroption
+    type: dockerOptions 
     source:
       memory: 256 # in MB
       cpu-shares: 0
@@ -25,16 +24,14 @@ resources:
         - 5672:5672
         - 443:50000
         
-  - name: resourcev-ecsparam #test once more
+  - name: e2eplv2v-ecsparam #test once more
     type: params
-    integration: cock1-ecscluster
     source:
       params:
         foo: boo
         api_url: https://api.shippable.com
         
-  - name: resourcev-replica
+  - name: e2eplv2v-replica
     type: replicas
-    integration: cock1-ecscluster
     source:
       count: 1
