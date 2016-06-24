@@ -18,7 +18,7 @@ resources:
     type: dockerOptions 
     source:
       memory: 256 # in MB
-      cpu-shares: 64
+      cpu-shares: 0
       portMappings: # format: ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort | containerPort
         - 80:3000 
         - 5672:5672
