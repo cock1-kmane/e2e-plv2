@@ -5,7 +5,7 @@ jobs:
       - GET: e2eplv2v-image1
       - GET: e2eplv2v-dockeroption1
       - GET: e2eplv2v-ecsparam1
-      #- GET: e2eplv2v-replica1
+      - GET: e2eplv2v-replica1
       
  # - name: e2eplv2jobv-ecsdeploy1
   #  type: ecsDeploy
